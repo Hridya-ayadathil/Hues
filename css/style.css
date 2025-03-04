@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4761FF;
+    --primary:  #F5F5DC;
     --secondary: #555555;
     --light: #F1F3FA;
-    --dark: #1C2035;
+    --dark: #35281e;
 }
 
 .back-to-top {
@@ -42,7 +42,7 @@
 
 .btn-primary,
 .btn-outline-primary:hover {
-    color: var(--light);
+    color: #35281e;
 }
 
 .btn-secondary,
@@ -93,7 +93,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #35281e;
 }
 
 .navbar .dropdown-toggle::after {
@@ -161,7 +161,9 @@
     border-radius: 3.5rem;
     background-color: var(--primary);
     border: 15px solid var(--primary);
+    color: #35281e;
 }
+
 
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
@@ -203,11 +205,50 @@
 }
 
 
-/*** About ***/
+
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/about.jpg) left center no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+                url(../img/about.jpg) center center / cover no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .about {
+        width: 100vw; /* Full width */
+        height: auto; /* Adjust height dynamically */
+        background-position: center;
+        background-size: cover;
+        padding: 50px 0; /* Ensure content is inside */
+    }
+
+    .about .container-xxl {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about .row {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .col-lg-6 {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+   
+}
+
+
 
 .btn-play {
     position: relative;
@@ -324,7 +365,7 @@
 }
 
 .service-item:hover .service-text h5 {
-    color: var(--primary);
+    color: #35281e;
 }
 
 .service-item .service-btn {
@@ -451,7 +492,7 @@
 
 .team-item .team-social li .btn {
     background: #FFFFFF;
-    color: var(--primary);
+    color: #35281e;
     border-radius: 40px;
     transition: .5s;
 }
@@ -560,12 +601,12 @@
     color: #B0B9AE;
 }
 
-.footer .btn.btn-link {
+rgb(53, 40, 30){
     display: block;
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #B0B9AE;
+    color: #000000;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -594,5 +635,5 @@
 }
 
 .copyright a:hover {
-    color: var(--primary) !important;
+    color: #35281e !important;
 }
